@@ -24,8 +24,10 @@ function Home() {
         <p>Content 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <p>Content 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <Flippings/>
+
         <FlippingContent/>
+
+        <Flippings/>
 
     </div>
   );

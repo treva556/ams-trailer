@@ -16,24 +16,30 @@ const FlippingContent = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 3) % contents.length);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % contents.length);
     }, 2000);
 
     return () => clearInterval(interval);
   }, [contents.length]);
 
-  return (<div className=' mt-5'>
-    <p className=' text-lg font-bold mb-3'>What our clents say </p>
-    <div className="columns-3 gap-4">
-      {contents.slice(currentIndex, currentIndex + 3).map((content, index) => (
-        <div
-          key={index}
-          className="p-4 bg-gray-200 rounded shadow-md transition-opacity duration-500 ease-in-out"
-        >
-          {content}
-        </div>
-      ))}
-    </div>
+  return (
+    <div>
+      <p className='mt-3 text-xl font-bold text-black'>Our Various Clients</p>
+      <div className="columns-3 gap-4">
+        {Array.from({ length: 3 }).map((_, idx) => {
+          const contentIndex = (currentIndex + idx) % contents.length;
+          return (
+            <div
+              key={idx}
+              className={`p-4 rounded shadow-md transition-opacity duration-500 ease-in-out ${
+                contentIndex % 2 === 0 ? 'bg-red-700 text-white' : 'bg-red-500 text-black'
+              }`}
+            >
+              {contents[contentIndex]}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };
