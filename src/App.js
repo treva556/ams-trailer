@@ -9,8 +9,7 @@ import Home from './pages/home'; // Home component
 import Nav from './components/nav';
 import Footer from './components/footer';
 // import About from './sections/About'; // About component
-// import Contacts from './sections/Contacts'; // Contacts component
-
+import Mgm from './pages/management';
 function App() {
   return (
     
@@ -19,7 +18,7 @@ function App() {
         <Nav/>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/services" element={<Services />} /> */}
+          <Route path="/mgm" element={<Mgm />} />
           {/* <Route path="/about" element={<About />} /> */}
           {/* <Route path="/contacts" element={<Contacts />} /> */}
         </Routes>
