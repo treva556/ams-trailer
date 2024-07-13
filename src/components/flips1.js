@@ -18,13 +18,15 @@ const Flippings = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 3) % contents.length);
-    }, 7000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [contents.length]);
 
   return (<div className=' mt-5'>
     <p className=' text-lg font-bold mb-3'>  What Our Clients Say</p>
+    <p className=' text-lg font-bold mb-3'> Client Review</p>
+
     <div className="columns-3 gap-4">
       {contents.slice(currentIndex, currentIndex + 3).map((content, index) => (
         <div

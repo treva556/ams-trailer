@@ -32,7 +32,7 @@ const FlippingContent = () => {
             <div
               key={idx}
               className={`p-4 rounded shadow-md transition-opacity duration-500 ease-in-out ${
-                contentIndex % 2 === 0 ? 'bg-red-700 text-white' : 'bg-red-500 text-black'
+                contentIndex % 2 === 0 ? 'bg-red-700 text-white' : 'bg-red-600 text-white'
               }`}
             >
               {contents[contentIndex]}
