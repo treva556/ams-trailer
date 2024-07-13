@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="App">
      <div className=' text-white bg-black p-10'>
-hh
+FOOTER
      </div>
     </div>
   );

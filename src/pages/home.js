@@ -10,7 +10,7 @@ import 'typeface-jetbrains-mono';
 function Home() {
   return (
     <div className="App">
-        <div className='bg-slate-300 p-4'>
+        <div className='bg-slate-300 p-6 text-slate-300'>
             hhh
         </div>
      <div className='ms p-32 bg-slate-700'>
