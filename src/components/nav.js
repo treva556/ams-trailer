@@ -5,7 +5,7 @@ import React from 'react';
 function Nav() {
   return (
     <div className="App">
-      <nav className="border-gray-200 bg-slate-200 mt-2 fixed w-full">
+      <nav className="border-gray-200 bg-slate-300 mt-1 fixed w-full">
         <div className="max-w-screen-xl mx-auto flex justify-end">
           <ul className="flex space-x-4 p-1 md:p-0">
             <li>

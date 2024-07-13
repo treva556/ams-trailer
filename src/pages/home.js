@@ -11,7 +11,7 @@ import Pic from '../assets/picc.jpeg'
 function Home() {
   return (
     <div className="App">
-        <div className='bg-slate-300 p-6 text-slate-300'>
+        <div className='bg-slate-300 p-4 text-slate-300'>
             hhh
         </div>
         <div className="relative w-full h-64">
