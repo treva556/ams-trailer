@@ -5,6 +5,7 @@ import '../App.css';
 import FlippingContent from '../components/flips';
 import Flippings from '../components/flips1';
 import 'typeface-jetbrains-mono';
+import Pic from '../assets/picc.jpeg'
 
 
 function Home() {
@@ -13,9 +14,16 @@ function Home() {
         <div className='bg-slate-300 p-6 text-slate-300'>
             hhh
         </div>
-     <div className='ms p-32 bg-slate-700'>
-         HEADER
-     </div>
+        <div className="relative w-full h-64">
+            <img
+                src={Pic}
+                alt="Example"
+                className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-lg">
+                Your Text Here
+            </div>
+        </div>
      <p className=' p-4 bg-slate-200 font-bold'> Archangel Michael Security Firm</p>
 
      <div class="flex flex-col md:flex-row">
