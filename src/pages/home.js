@@ -60,7 +60,7 @@ function Home() {
         <p>Content 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         </div>
-        <div className=' mt-5 mb-5 font-bold' >
+        <div className=' flex flex-col items-center font-bold ' >
             <div >
                 training videos
             </div>
@@ -68,6 +68,10 @@ function Home() {
             <div>
                 other images
             </div>
+       
+        <div className=' bg-yellow-300 p-1 rounded-2xl w-14 border border-neutral-950'> 
+            tes
+        </div>
         </div >
         <FlippingContent/>
 
