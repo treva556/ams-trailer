@@ -25,13 +25,15 @@ function Home() {
             <p className=' ms'> AMS Security was founded by the church who saw a need for high-quality security services in the local community. Starting with a small team of dedicated professionals, the company has grown over the years to become a leading provider of manned security solutions. Our journey is marked by numerous milestones, including expanding our service areas, acquiring advanced security technology, and receiving multiple industry awards for excellence. </p>
 
             </div>
-        <div class="p-4 bg-red-500">
+        <div class="p-4 bg-yellow-300 ">
         <p className=' ms'> AMS Security was founded by the church who saw a need for high-quality security services in the local community. Starting with a small team of dedicated professionals, the company has grown over the years to become a leading provider of manned security solutions. Our journey is marked by numerous milestones, including expanding our service areas, acquiring advanced security technology, and receiving multiple industry awards for excellence. </p>
 
         </div>
         </div>
         <div class="columns-3">
+            <div className='border-t-4 border-indigo-500 '>
         <p> We deal in events like weddings and fundraisers... </p>
+        </div>
         <p>Content 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <p>Content 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
