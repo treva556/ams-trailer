@@ -30,7 +30,7 @@ function Home() {
 
         </div>
         </div>
-        <div class="columns-3">
+        <div class=" mt-3 columns-3">
             <div className='border-t-4 border-indigo-500 '>
         <p> We deal in events like weddings and fundraisers... </p>
         </div>
