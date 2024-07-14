@@ -6,7 +6,7 @@ import '../App.css';
 function Footer() {
   return (
     <div className="App">
-     <div className=' text-white bg-black p-10'>
+     <div className=' text-white bg-black p-28'>
 FOOTER
      </div>
     </div>
