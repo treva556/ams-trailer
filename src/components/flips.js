@@ -25,7 +25,7 @@ const FlippingContent = () => {
   return (
     <div className=' bg-slate-200'>
       <p className='mt-3 text-xl font-bold text-black mb-3'>Our Various Clients</p>
-      <div className="columns-3 gap-4">
+      <div className="columns-3 gap-1">
         {Array.from({ length: 3 }).map((_, idx) => {
           const contentIndex = (currentIndex + idx) % contents.length;
           return (

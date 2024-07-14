@@ -31,7 +31,7 @@ const Flippings = () => {
       {contents.slice(currentIndex, currentIndex + 3).map((content, index) => (
         <div
           key={index}
-          className="p-4 rounded shadow-md transition-opacity duration-500 ease-in-out"
+          className="p-6 rounded shadow-md transition-opacity duration-500 ease-in-out"
         >
           {content}
         </div>
