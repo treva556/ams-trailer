@@ -34,29 +34,28 @@ function Home() {
                 <p className='font-bold'>Mission & Values</p>
                 <p className='ms'> Our mission at AMS Security is to provide reliable, professional, and customized security services that ensure the safety and peace of mind of our clients. We are committed to: </p>
                 <ul>
-                    <li>. kk</li>
+                    <li>1. Integrity</li>
                     <li>kk</li>
                 </ul>
             </div>
         </div>
 
-        <div className='font-bold mt-4'>
+        <div className='font-bold mt-4 border border-black'>
             Services
             <div className="flex flex-col md:flex-row ml-2 mr-2">
             <div className="relative w-full h-64 rounded-lg my-2">
             <img
                 src={Pic}
                 alt="Example"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover shadow-md"
             />
             <div className="absolute inset-0 flex items-center justify-center text-white font-bold text-lg">
                 Your Text Here
             </div>
         </div>
                 <div className="p-4">
-                    <p className='ms'>1. AMS Security was founded by the church who saw a need for high-quality security services in the local community. Starting with a small team of dedicated professionals, the company has grown over the years to become a leading provider of manned security solutions. Our journey is marked by numerous milestones, including expanding our service areas, acquiring advanced security technology, and receiving multiple industry awards for excellence.</p>
+                    <p className='ms'>At AMS Security Firm  we understand that the safety and security of your people, property, and assets are paramount. Our Manned Guarding Services are designed to provide comprehensive protection through highly trained security personnel who are dedicated to maintaining a secure environment. Here’s an in-depth look at what our Manned Guarding Services entail:</p>
                 </div>
-                
                
             </div>
         </div>
@@ -65,16 +64,22 @@ function Home() {
             <p className='font-bold mt-4 '>Variety Services</p>
             <div className="mt-3 columns-3 p-12">
                 <div>
-                    kk
+                    events
                 <div className='border-t-4 border-slate-500'>
                     <p>We deal in events like weddings and fundraisers...</p>
                 </div>
                 </div>
+                <div>
+                    business areas 
                 <div className='border-t-4 border-slate-500'>
-                <p>Content 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>We deal in events like weddings and fundraisers...</p>
                 </div>
-                <div className=' border-t-4 border-slate-500'>
-                <p>Content 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div>
+                    transportation
+                <div className='border-t-4 border-slate-500'>
+                    <p>We deal in events like weddings and fundraisers...</p>
+                </div>
                 </div>
             </div>
         </div>
@@ -86,6 +91,7 @@ function Home() {
                 Tes
             </div>
         </div> */}
+
         <FlippingContent />
         <Flippings />
     </div>
@@ -93,3 +99,8 @@ function Home() {
 }
 
 export default Home;
+
+
+
+
+//

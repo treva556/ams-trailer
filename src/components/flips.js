@@ -6,12 +6,12 @@ const FlippingContent = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const contents = [
-    "Content 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "Content 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "Content 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "Content 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "Content 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "Content 6. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "Content 1. adipiscing elit.",
+    "Content 2. adipiscing elit.",
+    "Content 3. adipiscing elit.",
+    "Content 4. adipiscing elit.",
+    "Content 5. adipiscing elit.",
+    "Content 6. adipiscing elit.",
   ];
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const FlippingContent = () => {
   }, [contents.length]);
 
   return (
-    <div className=' bg-slate-200'>
+    <div className='justify-items-center bg-slate-200 p-4'>
       <p className='mt-3 text-xl font-bold text-black mb-3'>Our Various Clients</p>
       <div className="columns-3 gap-1">
         {Array.from({ length: 3 }).map((_, idx) => {
@@ -39,6 +39,9 @@ const FlippingContent = () => {
             </div>
           );
         })}
+      </div>
+      <div className='flex justify-center items-center p-7 h-2 bg-yellow-300 border border-black w-10 mx-auto'>
+        <p> MORE</p>
       </div>
     </div>
   );

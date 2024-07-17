@@ -9,7 +9,7 @@ const Flippings = () => {
   const contents = [
     "Content 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "Content 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "Content 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "GOOOD",
     "Content 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "Content 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     "Content 6. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
