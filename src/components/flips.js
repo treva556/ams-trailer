@@ -9,9 +9,10 @@ const FlippingContent = () => {
 
   const contents = [
     <img src={Huw} alt="Huawei Logo" className="w-24 h-24 object-contain mx-auto" />, // Load as JSX
-    "Content 3. adipiscing elit.",
+    <img src={Huw} alt="Huawei Logo" className="w-24 h-24 object-contain col2 mx-auto" />,
     <img src={Huw} alt="Huawei Logo" className="w-24 h-24 object-contain mx-auto" />,
-    "Content 5. adipiscing elit.",
+    <img src={Huw} alt="Huawei Logo" className="w-24 h-24 object-contain mx-auto" />,
+    <img src={Huw} alt="Huawei Logo" className="w-24 h-24 object-contain col2 mx-auto" />,
     <img src={Huw} alt="Huawei Logo" className="w-24 h-24 object-contain mx-auto" />,
   ];
 
