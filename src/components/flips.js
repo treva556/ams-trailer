@@ -40,9 +40,7 @@ const FlippingContent = () => {
           );
         })}
       </div>
-      <div className='flex justify-center items-center p-7 h-2 bg-yellow-300 border border-black w-10 mx-auto'>
-        <p> MORE</p>
-      </div>
+     
     </div>
   );
 };

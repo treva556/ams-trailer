@@ -5,7 +5,7 @@ import React from 'react';
 function Nav() {
   return (
     <div className="App">
-     <nav className="border-gray-200 mt-1 fixed w-full ml-2 mr-4 rounded-2xl">
+     <nav className="border-gray-200 p-1 bg-black mt-1 fixed w-full ml-2 mr-4 rounded-2xl">
         <div className="max-w-screen-xl mx-auto flex justify-between">
           <div className="ml-2">
             {/* Logo or brand name can go here */}
