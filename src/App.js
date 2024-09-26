@@ -10,6 +10,7 @@ import Nav from './components/nav';
 import Footer from './components/footer';
 // import About from './sections/About'; // About component
 import Mgm from './pages/management';
+import Navbar from './components/navbar';
 
 
 function App() {
@@ -17,7 +18,11 @@ function App() {
     
     <Router>
       <div className="App">
-        <Nav/>
+        {/* <Nav/> */}
+        <div className=' bg-black'>
+        <Navbar/>
+        </div>
+       
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/mgm" element={<Mgm />} />

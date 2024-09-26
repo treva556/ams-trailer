@@ -1,17 +1,18 @@
 
 
 import React, { useState, useEffect } from 'react';
+import '../App.css';
+import Huw from '../assets/huawei.png'; // Image import
 
 const FlippingContent = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const contents = [
-    "Content 1. adipiscing elit.",
-    "Content 2. adipiscing elit.",
+    <img src={Huw} alt="Huawei Logo" className="w-24 h-24 object-contain mx-auto" />, // Load as JSX
     "Content 3. adipiscing elit.",
-    "Content 4. adipiscing elit.",
+    <img src={Huw} alt="Huawei Logo" className="w-24 h-24 object-contain mx-auto" />,
     "Content 5. adipiscing elit.",
-    "Content 6. adipiscing elit.",
+    <img src={Huw} alt="Huawei Logo" className="w-24 h-24 object-contain mx-auto" />,
   ];
 
   useEffect(() => {
@@ -24,23 +25,24 @@ const FlippingContent = () => {
 
   return (
     <div className='justify-items-center bg-slate-200 p-4'>
-      <p className='mt-3 text-xl font-bold text-black mb-3'>Our Various Clients</p>
+      <p className='mt-3 text-xl font-bold text-black mb-3'>Proud to Work With</p>
       <div className="columns-3 gap-1">
         {Array.from({ length: 3 }).map((_, idx) => {
           const contentIndex = (currentIndex + idx) % contents.length;
+          const content = contents[contentIndex];
+
           return (
             <div
               key={idx}
               className={`p-4 rounded mb-4 shadow-md transition-opacity duration-500 ease-in-out ${
-                contentIndex % 2 === 0 ? ' bg-white text-black' : 'bg-yellow-300 text-black'
+                contentIndex % 2 === 0 ? 'bg-white text-black' : 'col2 text-black'
               }`}
             >
-              {contents[contentIndex]}
+              {content}
             </div>
           );
         })}
       </div>
-     
     </div>
   );
 };

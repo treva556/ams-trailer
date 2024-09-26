@@ -7,7 +7,8 @@ function Nav() {
     <div className="App">
      <nav className="border-gray-200 p-1 bg-black mt-1 fixed w-full ml-2 mr-4 rounded-2xl">
         <div className="max-w-screen-xl mx-auto flex justify-between">
-          <div className="ml-2">
+          <div className=" text-white">
+            AMS
             {/* Logo or brand name can go here */}
           </div>
           <ul className="flex space-x-4 p-1 md:p-0 mr-2">
