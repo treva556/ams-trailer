@@ -3,19 +3,17 @@ import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 
 const Navbar = () => {
-  // State to manage the navbar's visibility
   const [nav, setNav] = useState(false);
 
-  // Toggle function to handle the navbar's display
   const handleNav = () => {
     setNav(!nav);
   };
 
-  // Array containing navigation items
+  // Array containing navigation items with href for links
   const navItems = [
-    { id: 1, text: 'Home' },
-    { id: 4, text: 'Management' },
-    { id: 5, text: 'Careers' },
+    { id: 1, text: 'Home', href: '/' },
+    { id: 4, text: 'Management', href: '/mgm' },
+    { id: 5, text: 'Careers', href: '/careers' },
   ];
 
   return (
@@ -26,11 +24,10 @@ const Navbar = () => {
       {/* Desktop Navigation */}
       <ul className='hidden md:flex'>
         {navItems.map(item => (
-          <li
-            key={item.id}
-            className='p-4 hover:bg-[#F9D518] rounded-xl m-2 cursor-pointer duration-300 hover:text-black'
-          >
-            {item.text}
+          <li key={item.id}>
+            <a href={item.href} className='p-4 hover:bg-[#F9D518] rounded-xl m-2 cursor-pointer duration-300 hover:text-black'>
+              {item.text}
+            </a>
           </li>
         ))}
       </ul>
@@ -48,16 +45,11 @@ const Navbar = () => {
             : 'ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]'
         }
       >
-        {/* Mobile Logo */}
-        <h1 className='w-full text-3xl font-bold text-[#F9D518] m-4'> AMS</h1>
+        <h1 className='w-full text-3xl font-bold text-[#F9D518] m-4'>AMS</h1>
 
-        {/* Mobile Navigation Items */}
         {navItems.map(item => (
-          <li
-            key={item.id}
-            className='p-4 border-b rounded-xl hover:bg-[#F9D518] duration-300 hover:text-black cursor-pointer border-gray-600'
-          >
-            {item.text}
+          <li key={item.id} className='p-4 border-b rounded-xl hover:bg-[#F9D518] duration-300 hover:text-black cursor-pointer border-gray-600'>
+            <a href={item.href}>{item.text}</a>
           </li>
         ))}
       </ul>
