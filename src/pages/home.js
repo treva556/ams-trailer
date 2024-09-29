@@ -30,7 +30,7 @@ function Home() {
       </div>
 
       {/* Mission & Values Section */}
-      <div className='p-14 my-4 col2'>
+      <div className='p-8 my-4 col2'>
         <h2 className='text-3xl font-bold mb-4'>Mission & Values</h2>
         <p className='lg:text-lg'>
           Our mission is to provide unmatched security services that exceed our clients’ expectations. We value integrity, professionalism, and excellence in everything we do. Our commitment to continuous improvement, ethical practices, and client satisfaction drives our operations daily.
@@ -55,7 +55,18 @@ function Home() {
           </div>
         </div>
       </div>
-
+     <div className=' p-4'>
+      <h3 className=' font-bold text-2xl'>Training Clips</h3>
+        <div className=' flex flex-col lg:flex-row md:flex-row gap-2'>
+        <div  className=" p-20 bg-black text-white lg:w-1/2 md:w-1/2 " >
+              Video
+        </div>
+        <div  className=" py-20 bg-black text-white lg:w-1/2 md:w-1/2 " >
+              Video
+        </div>
+      </div>
+    
+     </div>
       {/* Flipping Content Components */}
       <FlippingContent />
       <Flippings />

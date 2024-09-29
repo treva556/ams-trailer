@@ -1,60 +1,63 @@
 
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [navOpen, setNavOpen] = useState(false);
 
-  const handleNav = () => {
-    setNav(!nav);
-  };
-
-  // Array containing navigation items with href for links
   const navItems = [
     { id: 1, text: 'Home', href: '/' },
-    { id: 4, text: 'Management', href: '/mgm' },
-    { id: 5, text: 'Careers', href: '/careers' },
+    { id: 2, text: 'Management', href: '/mgm' },
+    { id: 3, text: 'Careers', href: '/careers' },
   ];
 
   return (
-    <div className='bg-black flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
-      {/* Logo */}
-      <h1 className='w-full text-3xl font-bold text-[#F9D518]'>AMS</h1>
+    <div className="bg-black text-white flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4">
+      <h1 className="text-3xl font-bold ml-36 text-[#F9D518]">AMS</h1>
 
       {/* Desktop Navigation */}
-      <ul className='hidden md:flex'>
+      <ul className="hidden md:flex space-x-4">
         {navItems.map(item => (
           <li key={item.id}>
-            <a href={item.href} className='p-4 hover:bg-[#F9D518] rounded-xl m-2 cursor-pointer duration-300 hover:text-black'>
+            <Link
+              to={item.href}
+              className="p-4 rounded-md hover:bg-[#F9D518] hover:text-black transition duration-300"
+            >
               {item.text}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
 
       {/* Mobile Navigation Icon */}
-      <div onClick={handleNav} className='block md:hidden'>
-        {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
+      <div onClick={() => setNavOpen(!navOpen)} className="block md:hidden cursor-pointer">
+        {navOpen ? <AiOutlineClose size={24} /> : <AiOutlineMenu size={24} />}
       </div>
 
       {/* Mobile Navigation Menu */}
       <ul
-        className={
-          nav
-            ? 'fixed md:hidden left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500'
-            : 'ease-in-out w-[60%] duration-500 fixed top-0 bottom-0 left-[-100%]'
-        }
+        className={`fixed top-0 left-0 w-2/3 h-full bg-black border-r border-gray-900 transition-transform duration-300 ease-in-out ${navOpen ? 'translate-x-0' : '-translate-x-full'}`}
       >
-        <h1 className='w-full text-3xl font-bold text-[#F9D518] m-4'>AMS</h1>
-
-        {navItems.map(item => (
-          <li key={item.id} className='p-4 border-b rounded-xl hover:bg-[#F9D518] duration-300 hover:text-black cursor-pointer border-gray-600'>
-            <a href={item.href}>{item.text}</a>
-          </li>
-        ))}
+        <h1 className="text-3xl font-bold text-[#F9D518]  m-4">AMS</h1>
+        <div className="flex flex-col mt-8">
+          {navItems.map(item => (
+            <li key={item.id}>
+              <Link
+                to={item.href}
+                className="block p-4 text-xl border-b border-gray-600 hover:bg-[#F9D518] hover:text-black transition duration-150"
+                onClick={() => setNavOpen(false)} // Close the menu on item click
+              >
+                {item.text}
+              </Link>
+            </li>
+          ))}
+        </div>
       </ul>
     </div>
   );
 };
 
 export default Navbar;
+
+

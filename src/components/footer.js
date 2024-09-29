@@ -46,11 +46,67 @@ function Footer() {
         </div>
       </div>
       <div> 
-       <h2 className=' text-yellow-300'> Contacts    </h2>  
+       <h2 className=' text-yellow-300'> Contacts    </h2> 
+       <div>
+        <ul className="flex flex-col space-x-4 p-1 md:p-0 mr-2">
+        <li className=' py-2'>
+          
+              Phone:
+              <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-yellow-400 transition-all duration-500 group-hover:w-full"></span>
+          </li>
+            <li className=' py-2'>
+                Careers
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-yellow-400 transition-all duration-500 group-hover:w-full"></span>
+            </li>
+            <li className=' py-2'>
+            {/* <a
+                href="/mgm"
+                className="block py-2 px-2 text-white relative group "
+              > */}
+                Management
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-yellow-400 transition-all duration-500 group-hover:w-full"></span>
+
+              {/* </a> */}
+            </li>
+          </ul>
+        </div>
+    
       </div>
       <div>
        <h3 className=' text-yellow-300'>  Social Links </h3> 
+       <div>
+        <ul className="flex justify-center space-x-4 p-1 md:p-0 mr-2">
+        <li>
+         
+             FB
+            
+          </li>
+            <li>
+           
+                IG
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-yellow-400 transition-all duration-500 group-hover:w-full"></span>
+
+            </li>
+            <li>
+          
+               IN
+                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-yellow-400 transition-all duration-500 group-hover:w-full"></span>
+
+            </li>
+          </ul>
+        </div>
+      
       </div>
+      <p>
+      <a
+                href="/terms"
+                className="block underline py-2 px-2 text-slate-400 relative group "
+              >
+                Terms and Service
+                <span className="underline h-[2px] bg-yellow-400  group-hover:w-full"></span>
+
+              </a>
+      </p>
      </div>
    
   );

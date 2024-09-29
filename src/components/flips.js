@@ -2,7 +2,8 @@
 
 import React, { useState, useEffect } from 'react';
 import '../App.css';
-import Huw from '../assets/huawei.png'; // Image import
+import Huw from '../assets/huawei.png'; 
+import Citi from '../assets/citi.png';
 
 const FlippingContent = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -10,9 +11,9 @@ const FlippingContent = () => {
   const contents = [
     <img src={Huw} alt="Huawei Logo" className="w-24 h-24 object-contain mx-auto" />, // Load as JSX
     <img src={Huw} alt="Huawei Logo" className="w-24 h-24 object-contain col2 mx-auto" />,
+    <img src={Citi} alt="Huawei Logo" className="w-24 h-24 object-contain mx-auto" />,
     <img src={Huw} alt="Huawei Logo" className="w-24 h-24 object-contain mx-auto" />,
-    <img src={Huw} alt="Huawei Logo" className="w-24 h-24 object-contain mx-auto" />,
-    <img src={Huw} alt="Huawei Logo" className="w-24 h-24 object-contain col2 mx-auto" />,
+    <img src={Citi} alt="Huawei Logo" className="w-24 h-24 object-contain mx-auto" />,
     <img src={Huw} alt="Huawei Logo" className="w-24 h-24 object-contain mx-auto" />,
   ];
 
@@ -25,7 +26,7 @@ const FlippingContent = () => {
   }, [contents.length]);
 
   return (
-    <div className='justify-items-center bg-slate-200 p-4'>
+    <div className='justify-items-center bg-white p-4'>
       <p className='mt-3 text-xl font-bold text-black mb-3'>Proud to Work With</p>
       <div className="columns-3 gap-1">
         {Array.from({ length: 3 }).map((_, idx) => {
