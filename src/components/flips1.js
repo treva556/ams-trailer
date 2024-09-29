@@ -9,7 +9,8 @@ const Flippings = () => {
     "Their guards are courteous and well-trained. They have exceeded our expectations in terms of reliability and customer service. Highly recommend!",
     "Responsive, reliable, and always ready to help. Their guards have been instrumental in safeguarding our premises, and we couldn’t be happier.",
     "Exceptional service and professionalism. The security team was always on time, well-trained, and attentive to detail. We feel much safer with their presence.",
-    "Their professionalism and dedication were evident from day one. We’ve had zero issues since hiring them, and I can’t recommend them enough.",  "Responsive, reliable, and always ready to help. Their guards have been instrumental in safeguarding our premises, and we couldn’t be happier.",
+    "Their professionalism and dedication were evident from day one. We’ve had zero issues since hiring them, and I can’t recommend them enough.", 
+    "Exceptional service and professionalism. The security team was always on time, well-trained, and attentive to detail. We feel much safer with their presence.",
     "We’re very satisfied with AMS. Their security personnel are well-trained, friendly, and highly capable in handling any situation." ,
   ];
 

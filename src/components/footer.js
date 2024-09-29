@@ -5,7 +5,9 @@ import '../App.css';
 
 function Footer() {
   return (
-    
+    <div className=' bg-black'>
+
+   
      <div className=' text-white justify-around p-6 bg-black flex flex-col md:flex-row lg:flex-row '>
       <div>
        <h1 className=' text-yellow-300'>  Quick Links
@@ -97,7 +99,9 @@ function Footer() {
         </div>
       
       </div>
-      <p>
+     
+     </div>
+     <p> 
       <a
                 href="/terms"
                 className="block underline py-2 px-2 text-slate-400 relative group "
@@ -108,7 +112,6 @@ function Footer() {
               </a>
       </p>
      </div>
-   
   );
 }
 
