@@ -17,11 +17,11 @@ function Home() {
     <div className="App bg-slate-200">
       {/* Header Image */}
       <div className='text-xl'>
-        <img
-          src={SecP}
-          alt="Security Services"
-          className="w-full h-full object-cover"
-        />
+      <img
+        src={SecP}
+        alt="Security Services"
+        className="w-full h-full lg:h-[644px] object-cover"
+      />
         <div className='col2 flex justify-center items-center p-3'>
           <div className=' bg-black text-white p-2 rounded-2xl mr-2'>
            Call:
@@ -29,7 +29,10 @@ function Home() {
           0794 264100
         </div>
       </div>
-
+     
+     <div className=' bg-white pt-4' >
+      <h4 className=' underline text-xl lg:text-2xl'> Archangel Michael Security Firm </h4>
+     </div>
       {/* About Us Section */}
       <div className='p-8 bg-white'>
         <h2 className='Hea text-3xl font-bold mb-4'>About Us</h2>

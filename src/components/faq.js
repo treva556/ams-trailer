@@ -7,7 +7,7 @@ import '../App.css';
 function Faq() {
   return (
     <>
-    <section class="bg-yellow-400 text-black py-4">
+    <section class="col2 text-black py-4">
       <div class="container flex flex-col justify-center p-4 mx-auto md:p-8">
         <h2 class="mb-12 text-2xl font-bold text-center">Frequently Asked Questions</h2>
         <div class="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 divide-gray-700">
