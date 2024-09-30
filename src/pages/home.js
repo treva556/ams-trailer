@@ -41,7 +41,7 @@ function Home() {
       {/* Mission & Values Section */}
       <div className='p-8 my-4 col2'>
         <h2 className='text-3xl font-bold mb-4'>Mission & Values</h2>
-        <p className='lg:text-lg'>
+        <p className='lg:text-lg fade-in'>
           Our mission is to provide unmatched security services that exceed our clients’ expectations. We value integrity, professionalism, and excellence in everything we do. Our commitment to continuous improvement, ethical practices, and client satisfaction drives our operations daily.
         </p>
       </div>
