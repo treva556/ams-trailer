@@ -18,3 +18,12 @@
   text-decoration-color: #F9D518; /* For browsers that support it */
   text-underline-offset: 3px; /* Optional: to adjust the distance from the text */
 }
+
+.fade {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Control fade duration */
+}
+
+.fade-show {
+  opacity: 1;
+}
