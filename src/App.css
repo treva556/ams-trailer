@@ -12,3 +12,9 @@
 .col2{
   background-color: #F9D518;
 }
+
+.Hea {
+  text-decoration: underline;
+  text-decoration-color: #F9D518; /* For browsers that support it */
+  text-underline-offset: 3px; /* Optional: to adjust the distance from the text */
+}

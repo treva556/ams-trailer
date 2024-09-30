@@ -47,17 +47,23 @@ function Footer() {
           </ul>
         </div>
       </div>
+
+      
+
+
       <div> 
+
        <h2 className=' text-yellow-300'> Contacts    </h2> 
        <div>
         <ul className="flex flex-col space-x-4 p-1 md:p-0 mr-2">
         <li className=' py-2'>
           
-              Phone:
+              Phone: 0794 264100
               <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-yellow-400 transition-all duration-500 group-hover:w-full"></span>
           </li>
             <li className=' py-2'>
-                Careers
+              Email: 
+              info@archangelmichaelsecurity.co.ke
                 <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-yellow-400 transition-all duration-500 group-hover:w-full"></span>
             </li>
             <li className=' py-2'>
@@ -72,9 +78,15 @@ function Footer() {
             </li>
           </ul>
         </div>
-    
+     <div>
+        <h4 className=' text-yellow-300 font-semibold'> Location </h4>
+        <p> Nairobi CBD, Nairobi </p>
+          <p> 5th floor, kaunda street, City Square</p>
+        
+      </div>
       </div>
       <div>
+      
        <h3 className=' text-yellow-300'>  Social Links </h3> 
        <div>
         <ul className="flex justify-center space-x-4 p-1 md:p-0 mr-2">
