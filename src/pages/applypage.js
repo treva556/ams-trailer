@@ -21,16 +21,27 @@ function Apply() {
   return (
     <div className="App py-6 px-4 lg:px-36">
 
-      <div className=' flex justify-start'>
-      <h1 className="text-2xl font-bold mb-4">Job Requirements</h1>
-      <ul className="list-disc ml-5 mb-4">
-        <li>Relevant degree or certification.</li>
-        <li>At least 2 years of experience in a similar role.</li>
-        <li>Strong communication and interpersonal skills.</li>
-        <li>Ability to work independently and as part of a team.</li>
-        <li>Proficiency in relevant software and tools.</li>
-      </ul>
+      <div className='flex flex-col mb-6'>
+        <h2 className="text-xl font-semibold mb-2">Job Description</h2>
+        <p className="mb-4">
+          We are seeking a highly motivated and skilled individual to join our team as a [Job Title]. The ideal candidate will be responsible for [brief overview of job responsibilities]. We value a proactive approach and encourage collaboration among team members to achieve our goals.
+        </p>
       </div>
+
+
+      <div className='flex flex-col'>
+        <h1 className="text-2xl font-bold mb-4">Job Requirements</h1>
+        <ul className="list-disc ml-5 mb-4 pl-5">
+          <li>Relevant degree or certification.</li>
+          <li>At least 2 years of experience in a similar role.</li>
+          <li>Strong communication and interpersonal skills.</li>
+          <li>Ability to work independently and as part of a team.</li>
+          <li>Proficiency in relevant software and tools.</li>
+        </ul>
+      </div>
+
+    
+
       <h2 className="text-xl font-semibold mb-2">Apply Now</h2>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <div>
@@ -40,7 +51,7 @@ function Apply() {
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="border border-gray-300 rounded p-2 w-full"
+            className="border border-gray-300 rounded p-2 w-full md:w-2/3 lg:w-1/2"
             required
           />
         </div>
@@ -51,7 +62,7 @@ function Apply() {
             id="phone"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            className="border border-gray-300 rounded p-2 w-full"
+            className="border border-gray-300 rounded p-2 w-full md:w-2/3 lg:w-1/2"
             required
           />
         </div>
@@ -61,7 +72,7 @@ function Apply() {
             type="file"
             id="cv"
             onChange={(e) => setCv(e.target.files[0])}
-            className="border border-gray-300 rounded p-2 w-full"
+            className="border border-gray-300 rounded p-2 w-full md:w-2/3 lg:w-1/2"
             accept=".pdf,.doc,.docx"
             required
           />
