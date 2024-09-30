@@ -41,6 +41,7 @@ function Apply() {
       </div>
 
     
+    <div className=' bg-slate-200 rounded-lg m-4'>
 
       <h2 className="text-xl font-semibold mb-2">Apply Now</h2>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -89,6 +90,7 @@ function Apply() {
           Job applied
         </div>
       )}
+      </div>
     </div>
   );
 }

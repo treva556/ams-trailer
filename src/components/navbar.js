@@ -1,10 +1,11 @@
 
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
+  const location = useLocation();
 
   const navItems = [
     { id: 1, text: 'Home', href: '/' },
@@ -22,7 +23,7 @@ const Navbar = () => {
           <li key={item.id}>
             <Link
               to={item.href}
-              className="p-4 rounded-md hover:bg-[#F9D518] hover:text-black transition duration-300"
+              className={`p-2 rounded-md transition duration-300 ${location.pathname === item.href ? ' text-yellow-300' : 'hover:bg-[#F9D518] hover:text-black'}`}
             >
               {item.text}
             </Link>
@@ -39,14 +40,14 @@ const Navbar = () => {
       <ul
         className={`fixed top-0 left-0 w-2/3 h-full bg-black border-r border-gray-900 transition-transform duration-300 ease-in-out ${navOpen ? 'translate-x-0' : '-translate-x-full'}`}
       >
-        <h1 className="text-3xl font-bold text-[#F9D518]  m-4">AMS</h1>
+        <h1 className="text-3xl font-bold text-[#F9D518] m-4">AMS</h1>
         <div className="flex flex-col mt-8">
           {navItems.map(item => (
             <li key={item.id}>
               <Link
                 to={item.href}
-                className="block p-4 text-xl border-b border-gray-600 hover:bg-[#F9D518] hover:text-black transition duration-150"
-                onClick={() => setNavOpen(false)} // Close the menu on item click
+                className={`block p-4 text-xl border-b border-gray-600 transition duration-150 ${location.pathname === item.href ? 'bg-[#F9D518] text-black' : 'hover:bg-[#F9D518] hover:text-black'}`}
+                onClick={() => setNavOpen(false)} 
               >
                 {item.text}
               </Link>
@@ -59,5 +60,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
