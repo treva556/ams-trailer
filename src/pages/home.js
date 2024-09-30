@@ -9,7 +9,7 @@ import Huw from '../assets/huawei.png';
 import SecP from '../assets/sec.jpeg';
 import SecP2 from '../assets/secp.jpg';
 // import Manned from '../components/manned';
-
+import Faq from '../components/faq';
 
 
 function Home() {
@@ -84,6 +84,8 @@ function Home() {
      </div>
       {/* Flipping Content Components */}
       <FlippingContent />
+
+      <Faq/>
      
       <Flippings />
 
