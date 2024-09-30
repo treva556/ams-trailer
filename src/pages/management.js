@@ -41,7 +41,7 @@ function Mgm() {
         <p> CFO</p>
       </div>
 
-      <div className=' flex flex-col items-center'> 
+      <div className=' flex flex-col py-4 items-center'> 
         <img
               src={Man}
               alt="Manned Guard Services"

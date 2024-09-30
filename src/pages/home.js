@@ -16,13 +16,13 @@ function Home() {
   return (
     <div className="App bg-slate-200">
       {/* Header Image */}
-      <div className='text-2xl'>
+      <div className='text-xl'>
         <img
           src={SecP}
           alt="Security Services"
           className="w-full h-full object-cover"
         />
-        <div className='col2 flex justify-center items-center p-6'>
+        <div className='col2 flex justify-center items-center p-3'>
           <div className=' bg-black text-white p-2 rounded-2xl mr-2'>
            Call:
           </div>

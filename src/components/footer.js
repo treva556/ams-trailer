@@ -5,9 +5,7 @@ import '../App.css';
 
 function Footer() {
   return (
-    <div className=' bg-black'>
-
-   
+    <div className=' bg-black'> 
      <div className=' text-white justify-around p-6 bg-black flex flex-col md:flex-row lg:flex-row '>
       <div>
        <h1 className=' text-yellow-300'>  Quick Links
@@ -66,16 +64,7 @@ function Footer() {
               info@archangelmichaelsecurity.co.ke
                 <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-yellow-400 transition-all duration-500 group-hover:w-full"></span>
             </li>
-            <li className=' py-2'>
-            {/* <a
-                href="/mgm"
-                className="block py-2 px-2 text-white relative group "
-              > */}
-                Management
-                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-yellow-400 transition-all duration-500 group-hover:w-full"></span>
-
-              {/* </a> */}
-            </li>
+         
           </ul>
         </div>
      <div>
@@ -90,15 +79,15 @@ function Footer() {
        <h3 className=' text-yellow-300'>  Social Links </h3> 
        <div>
         <ul className="flex justify-center space-x-4 p-1 md:p-0 mr-2">
-        <li>
+        <li className=''>
          
              FB
             
           </li>
             <li>
            
-                IG
-                <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-yellow-400 transition-all duration-500 group-hover:w-full"></span>
+              IG
+             <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-yellow-400 transition-all duration-500 group-hover:w-full"></span>
 
             </li>
             <li>
