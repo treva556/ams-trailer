@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className="bg-black text-white flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4">
-      <h1 className="text-1xl font-bold ml-36 text-[#F9D518]"> Archangel Michael Security Firm</h1>
+      <h1 className="text-1xl font-bold ml-12 text-[#F9D518]"> Archangel Michael Security Firm</h1>
 
       {/* Desktop Navigation */}
       <ul className="hidden md:flex space-x-4">
